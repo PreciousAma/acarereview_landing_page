@@ -1,0 +1,94 @@
+.banner {
+    padding-top: 100px;
+    background-image: linear-gradient(90deg, rgba(255,255,255,1) 10%, rgba(255,255,255,0.3) 68%), url($banner-image);
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top right 95%;
+
+    @media only screen and (min-width: 500px) {
+        background-position: top right;
+    }
+
+    @media only screen and (min-width: 600px) {
+        background-image: linear-gradient(90deg, rgba(255,255,255,1) 25%, rgba(255,255,255,0.3) 68%), url($banner-image);
+        background-size: contain;
+    }
+    
+    @media only screen and (min-width: 768px) {
+        padding-top: 207px;
+        background-size: unset;
+        background-position: top right 120%;
+    }
+
+    @media only screen and (min-width: 1028px) {
+        background-position: top right;
+    }
+
+    @media only screen and (min-width: 1504px) {
+        background-size: cover;
+        background-position: top right -200px;
+    }
+
+&__content {
+    width: 100%;
+    max-width: 643px;
+}
+
+&__heading {
+    font-weight: 700;
+    font-size: 37px;
+    color: rgba($primary-color, 0.9);
+    margin-bottom: 29px;
+    z-index: 100;
+
+    &--orange {
+        color: #de6101;
+    }
+
+    &--gold {
+        color: rgba($secondary-color, 0.9);
+    }
+
+    @media only screen and (min-width: 768px) {
+        font-size: 72px;
+    }
+}
+
+&__text {
+    font-weight: 500;
+    font-size: 18px;
+    color: rgba($primary-color, 0.7);
+    margin-bottom: 30px;
+
+    @media only screen and (min-width: 768px) {
+        font-size: 24px;
+        margin-bottom: 69px;
+    }
+
+}
+
+&__links {
+    display: flex;
+    width: 80%;
+    max-width: 350px;
+
+    @media only screen and (min-width: 768px) {
+        width: 100%;
+        max-width: 550px;
+    }
+
+}
+
+&__link {
+    display: inline-block;
+
+    &-image {
+        width: 100%;
+        max-width: 259px;
+        height: auto;
+    }
+}
+
+}
+

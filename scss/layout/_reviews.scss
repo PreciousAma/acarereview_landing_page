@@ -1,0 +1,61 @@
+.reviews {
+  text-align: center;
+  padding-top: 44px;
+  padding-bottom: 44px;
+  max-width: 808px;
+  margin: auto;
+
+  &__title {
+    font-size: 28px;
+    font-weight: 700;
+    color: rgba($primary-color, 0.9);
+    margin-bottom: 18px;
+
+    @media screen and (min-width: 768px) {
+      font-size: 32px;
+    }
+  }
+
+  &__text {
+    color: rgba($primary-color, 0.7);
+    font-weight: 500;
+    font-size: 17px;
+    margin-bottom: 34px;
+
+    @media screen and (min-width: 768px) {
+      font-size: 20px;
+    }
+  }
+
+  &__search {
+    background-color: rgba(196, 196, 196, 0.6);
+    border-radius: 10px;
+    padding: 18px;
+
+    &-input {
+      width: 85%;
+      padding: 15px 28px;
+      border-radius: 10px 0 0 10px;
+      border: none;
+      font-size: 17px;
+    }
+
+    &-input::placeholder{
+      font-size: 17px;
+      font-weight: 500;
+      color: rgba(51, 39, 0, 0.35);
+    }
+
+    &-btn {
+      width: 15%;
+      padding: 15px;
+      border-radius: 0 10px 10px 0;
+      border: none;
+      background-color: rgba(120, 129, 128, 0.75);
+
+      & .fa-magnifying-glass {
+        color: $floral-white
+      }
+    }
+  }
+}

@@ -1,0 +1,106 @@
+.navbar {
+    // display: none;
+    position: absolute;
+    width: 100%;
+    z-index: 500;
+    top: 0;
+
+    &.bg-white {
+        background-color: rgba(237, 237, 237, 0.95);
+        box-shadow: 1px 5px 9px -4px rgba(0,0,0,0.73);
+    }
+
+    &__items {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        padding: 16px 0;
+    }
+    &__logo {
+        color: rgba($primary-color, 0.85);
+        font-size: 22px;
+        font-weight: 700;
+        // outline: 1px solid red;
+
+        @media only screen and (min-width: 768px){
+            font-size: 30px;
+        }
+    }
+    &__links {
+        display: none;
+        list-style: none;
+        flex-basis: 100%;
+        flex-direction: column;
+        align-items: flex-start;
+        // outline: 1px solid red;
+        // order: 3;
+        // width: 100%;
+
+        &.d-flex {
+            @extend .d-flex;
+        }
+        @media only screen and (min-width: 768px) {
+            display: flex;
+            flex-direction: row;
+            flex-basis: unset;
+        }
+
+
+    
+    }
+
+    &__link {
+        font-weight: 500;
+        font-size: 16px;
+        margin: 5px;
+        line-height: 20px;
+
+        &:last-of-type {
+            margin-top: 10px;
+        }
+
+        &-item {
+            text-decoration: none;
+            margin: 2px;
+            color: $secondary-color;
+            // color: #000000;
+            user-select: none;
+        }
+
+        &-btn {
+            background: $mustard;
+            color: $primary-color;
+            box-shadow: 0px 0.5px 10px rgba(51, 39, 0, 0.5);
+            border-radius: 2px;
+            padding: 4px 8px;
+
+            @media only screen and (min-width: 768px){
+                padding: 12px 20px;
+            }
+        }
+        @media only screen and (min-width: 768px){
+            font-size: 18px;
+            margin: 15px;
+        }
+    }
+    &__menu-button {
+        margin-left: 1.8rem;
+        border: none;
+        display: flex;
+        background: transparent;
+        justify-content: center;
+        align-items: center;
+        height: 38px;
+        width: 38px;
+
+        @media only screen and (min-width: 768px) {
+            display: none;
+        }
+    }
+
+    &__menu-icon {
+        font-size: 20px;
+        color: $secondary-color;
+    }
+}
