@@ -1,0 +1,25 @@
+.services {
+
+
+&__img {
+    width: 100%;
+    height: auto;
+}
+
+&__title {
+    font-weight: 700;
+    font-size: 32px;
+    color: rgba($primary-color, 0.9);
+}
+
+&__texts {
+    text-align: center;
+}
+
+&__text {
+    font-weight: 500;
+    font-size: 16px;
+    color: rgba(0, 0, 0, 0.7);
+}
+
+}
