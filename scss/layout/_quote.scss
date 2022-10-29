@@ -1,16 +1,20 @@
 .quote {
-  display: flex;
-  flex-direction: column;
-  column-gap: 80px;
-  row-gap: 32px;
-  align-items: center;
-  padding-top: 50px;
-  padding-bottom: 50px;
-  background: rgba(163, 142, 129, 0.1);
+  
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    column-gap: 80px;
+    row-gap: 32px;
+    align-items: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background: rgba(163, 142, 129, 0.1);
 
-  @media screen and (min-width: 768px) {
-    flex-direction: row;
-    justify-content: center;
+    @media screen and (min-width: 768px) {
+      flex-direction: row;
+      justify-content: center;
+  }
+
   }
 
   &__image-wrapper {

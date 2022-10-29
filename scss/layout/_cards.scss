@@ -1,29 +1,71 @@
 .card {
-    background: rgb(255, 251, 240);
+    padding-bottom: 84px;
+
+    // @media only screen and (min-width: 768px) {
+    //     padd
+    // }
+
+&__header-wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+&__header-images {
+    display: none;
+    
+
+    @media only screen and (min-width: 768px) {
+        display: flex;
+        align-items: center;
+        column-gap: 33px;
+    }
+}
 
 &__title1 {
     text-align: center;
+    padding-top: 30px;
     font-weight: 700;
-    font-size: 20px;
+    font-size: 28px;
     color: rgba($primary-color, 0.9);
-    margin-bottom: 60px;
+    margin-bottom: 40px;
+
+    @media only screen and (min-width: 768px) {
+        font-size: 32px;
+        text-align: left;
+    }
+
+
 }
 
 &__content {
     display: flex;
     flex-direction: column;
-    padding-left: 20px;
-    padding-right: 20px;
+    row-gap: 33px;
+    align-items: center;
+    // padding-left: 20px;
+    // padding-right: 20px;
+
+    @media only screen and (min-width: 768px) {
+        flex-direction: row;
+        column-gap: 33px;
+        justify-content: space-between;
+    }
 }
 
 &__wrap {
     background: rgba(254, 227, 207, 0.5);
     box-shadow: 4px 4px 10px rgb(255, 239, 223);
     border-radius: 18.8556px;
-    padding: 30px;
+    padding: 61px 40px;
     margin-bottom: 20px;
     text-align: center; 
-    font-weight: 500;   
+    font-weight: 500;
+    max-width: 500px;
+    
+    @media only screen and (min-width: 768px) {
+        max-width: 348px;
+    }
+
 &.bg-blue {
     background: rgba(79, 146, 182, 0.95);
     box-shadow: 4px 4px 20px rgba(79, 146, 182, 0.7);
@@ -49,11 +91,13 @@
     margin-bottom: 20px;
     color: rgba($primary-color, 0.85);
     font-size: 22px;
+    font-weight: 500;
 }
 
 &__text {
     color: rgba($primary-color, 0.75);
     font-size: 16px;
 }
+
 
 }

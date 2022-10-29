@@ -2,14 +2,21 @@
   text-align: center;
   padding-top: 44px;
   padding-bottom: 44px;
-  max-width: 808px;
   margin: auto;
+
+  &__content {
+    max-width: 800px;
+    margin: auto;
+  }
 
   &__title {
     font-size: 28px;
     font-weight: 700;
     color: rgba($primary-color, 0.9);
+    margin: auto;
     margin-bottom: 18px;
+    max-width: 450px;
+    
 
     @media screen and (min-width: 768px) {
       font-size: 32px;
@@ -58,4 +65,86 @@
       }
     }
   }
+
+  &__card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 24px;
+    align-items: center;
+    margin-top: 42px;
+
+    @media screen and (min-width: 768px) {
+      flex-direction: row;
+    }
+    
+
+    &_wrap {
+      max-width: 346px;
+      border-radius: 20px;
+      background-color: rgba(255, 208, 84, 0.85);
+      background-image: url("../../images/language-school-834138_1920\ 1.png");
+      padding-top: 246px;
+      background-size: contain;
+      background-repeat: no-repeat;
+
+      &.bg-purple {
+        background-image: url("../../images/women_1\ 2.png");
+        background-color: rgba(14, 2, 92, 0.75);  
+      };
+
+      &.bg-green {
+        background-color: rgba(12, 112, 3, 0.75);;
+      }
+
+      &.bg-purple, &.bg-green {
+        & .reviews__card_title, & .review__rating_value {  
+          color: rgba(255, 251, 240, 0.9);
+        }
+
+        & .reviews__card-text, & .review__rating_value {
+          color: rgba(255, 251, 240, 0.7);
+        }
+      }
+   }
+
+    &_texts {
+      padding: 21px 23px 33px 25px;
+      font-weight: 500;
+      text-align: left;
+    }
+
+
+    
+    &_title {
+      font-size: 15px;
+      color: rgba($primary-color, 0.85);
+      margin-bottom: 6px;
+    }
+
+     &-text {
+      font-size: 8px;
+      color: rgba($primary-color, 0.7);
+     }
+
+    // &.UI-texts {
+    //   background-color: rgba(14, 2, 92, 0.75);
+    // }
+  &_reactions {
+    display: flex;
+    align-items: center;
+    column-gap: 16px;
+    font-size: 10px;
+    margin-top: 8px;
+  }
+
+  &_reaction {
+    display: flex;
+    column-gap: 5px;
+    align-items: center;
+  }
+  
+  }
+
 }

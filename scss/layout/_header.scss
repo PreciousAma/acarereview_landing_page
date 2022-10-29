@@ -1,6 +1,6 @@
 .banner {
     padding-top: 100px;
-    background-image: linear-gradient(90deg, rgba(255,255,255,1) 10%, rgba(255,255,255,0.3) 68%), url($banner-image);
+    background-image: linear-gradient(90deg, rgba(255,251,240,1) 10%, rgba(255,251,240,0.3) 68%), url($banner-image);
     width: 100%;
     background-size: cover;
     background-repeat: no-repeat;
@@ -11,7 +11,7 @@
     }
 
     @media only screen and (min-width: 600px) {
-        background-image: linear-gradient(90deg, rgba(255,255,255,1) 25%, rgba(255,255,255,0.3) 68%), url($banner-image);
+        background-image: linear-gradient(90deg, rgba(255,251,240,1) 25%, rgba(255,251,240,0.3) 68%), url($banner-image);
         background-size: contain;
     }
     
@@ -32,7 +32,12 @@
 
 &__content {
     width: 100%;
-    max-width: 643px;
+    max-width: 730px;
+
+    
+    @media only screen and (min-width: 1280px) {
+        max-width: 850px;
+    }
 }
 
 &__heading {
@@ -51,7 +56,7 @@
     }
 
     @media only screen and (min-width: 768px) {
-        font-size: 72px;
+        font-size: 68px;
     }
 }
 
